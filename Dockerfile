@@ -6,7 +6,7 @@ RUN apk update && \
     apk add python && \
     rm -rf /var/cache/apk/*
 
-WORKDIR /app/blog
+WORKDIR /app
 RUN yarn global add gatsby-cli
 
 # to prevent errors inside container
@@ -19,6 +19,8 @@ RUN yarn global add gatsby-cli
 #RUN git config --global user.name "spam_me"
 
 EXPOSE 8000
+
+WORKDIR blog
 
 CMD ["gatsby", "develop", "-H", "0.0.0.0"]
 
