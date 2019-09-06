@@ -4,7 +4,7 @@ import Header from "../components/header";
 
 export default () => (
     <div>
-        <Header/>
+        <Header title="Header of index page" />
         <div>
             <h1>My Gatsby project</h1>
             <Link to="/test/">Navigate to test page</Link>
