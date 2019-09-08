@@ -2,10 +2,15 @@ import React from "react";
 import {Link} from "gatsby";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Post from "../components/Post";
 
 export default () => (
     <div>
         <Header title="Header of index page" />
+        <div className='container'>
+            <Post/>
+        </div>
+
         <div className='container'>
             <div>
                 <h1>My Gatsby project</h1>
