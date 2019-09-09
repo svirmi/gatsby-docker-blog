@@ -21,11 +21,22 @@ export default () => (
             </div>
         </div>
 
+        <div className='container'>
+            <div className="row justify-content-md-center">
+                <div className='col-md-6'>
+                    <Post
+                        title="This is the first post"
+                        excerpt="Some other text here.."
+                    />
+                </div>
+            </div>
+        </div>
+
         <div className='container mt-4'>
             <div className="row justify-content-md-center">
                 <div className='col-md-6'>
                         <Link to="/test/">Navigate to test page</Link>
-                    <img src="https://media.giphy.com/media/woZVO2B8ZQ55DqKsmN/giphy.gif" alt="happy guy" />
+                    <img className="img-fluid" src="https://media.giphy.com/media/woZVO2B8ZQ55DqKsmN/giphy.gif" alt="happy guy" />
                 </div>
             </div>
         </div>
