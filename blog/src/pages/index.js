@@ -4,7 +4,7 @@ import PrimaryLayout from "../layouts/PrimaryLayout";
 import Post from "../components/Post";
 
 export default () => (
-    <PrimaryLayout>
+    <PrimaryLayout column="col-md-12">
         <h1>My Gatsby project</h1>
 
         <div className='container'>
