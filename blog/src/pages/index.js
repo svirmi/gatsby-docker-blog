@@ -1,13 +1,10 @@
 import React from "react";
 import {Link} from "gatsby";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import PrimaryLayout from "../layouts/PrimaryLayout";
 import Post from "../components/Post";
 
 export default () => (
-    <div>
-        <Header title="Header of index page" />
-
+    <PrimaryLayout>
         <h1>My Gatsby project</h1>
 
         <div className='container'>
@@ -35,11 +32,10 @@ export default () => (
         <div className='container mt-4'>
             <div className="row justify-content-md-center">
                 <div className='col-md-6'>
-                        <Link to="/test/">Navigate to test page</Link>
+                    <Link to="/test/">Navigate to test page</Link>
                     <img className="img-fluid" src="https://media.giphy.com/media/woZVO2B8ZQ55DqKsmN/giphy.gif" alt="happy guy" />
                 </div>
             </div>
         </div>
-        <Footer />
-    </div>
-)
+    </PrimaryLayout>
+);
