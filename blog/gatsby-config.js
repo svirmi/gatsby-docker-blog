@@ -24,5 +24,9 @@ module.exports = {
                 path: `${__dirname}/src/`,
             },
         },
+        {
+            resolve: `gatsby-transformer-remark`,
+            options: {},
+        },
         ]
 }
