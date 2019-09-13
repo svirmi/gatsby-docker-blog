@@ -4,7 +4,9 @@ import {Link} from "gatsby";
 
 export default (props) => (
     <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">Gtasby-Bootstrap</Navbar.Brand>
+        <Navbar.Brand>
+            <Nav.Link as={Link} to="/">Gtasby-Bootstrap</Nav.Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">

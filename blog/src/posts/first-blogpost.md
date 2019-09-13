@@ -1,5 +1,5 @@
 ---
-title: "My first Blog Post"
+title: "My first MD Blog Post"
 date: "2019-09-13"
 keywords: "kw-1, kw-2, kw-3"
 image: "http://lorempixel.com/400/200/sports/Dummy-Text"

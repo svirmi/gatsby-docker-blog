@@ -14,6 +14,6 @@ const PrimaryLayout = (props) => (
         </div>
         <Footer/>
     </div>
-);
+)
 
 export default PrimaryLayout;
