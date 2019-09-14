@@ -4,7 +4,6 @@ import PrimaryLayout from "../layouts/PrimaryLayout";
 import Post from "../components/Post";
 
 export default ({data}) => {
-    console.log(data);
     return (
         <PrimaryLayout column="col-md-12">
 
@@ -18,7 +17,6 @@ export default ({data}) => {
                     </div>
                 </div>
             </div>
-
 
             {
                 data.allMarkdownRemark.nodes.map((node, i) => (
