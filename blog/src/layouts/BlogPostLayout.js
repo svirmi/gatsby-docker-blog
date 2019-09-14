@@ -12,6 +12,7 @@ const BlogPostLayout = ({data}) => {
                     <div className="row justify-content-md-center">
                         <h1>{post.frontmatter.title}</h1>
                         <div dangerouslySetInnerHTML={{__html: post.html}}></div>
+                        <img src={post.frontmatter.image} alt={post.frontmatter.title}/>
                     </div>
                 </div>
                 <Footer/>
@@ -27,6 +28,7 @@ export const query = graphql `
             html
             frontmatter {
                 title
+                image
             }
         }
     }
