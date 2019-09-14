@@ -21,11 +21,12 @@ export default ({data}) => {
             {
                 data.allMarkdownRemark.nodes.map((node, i) => (
                 <Post
+                    key     = {i}           // key={Math.random()} - very bad!
+                    // https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js
                     image   = {node.frontmatter.image}
                     title   = {node.frontmatter.title}
                     excerpt = {node.excerpt}
-                    key     = {i}           // key={Math.random()} - very bad!
-                    // https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js
+                    readMore = {node.fields.slug}
                 />
             ))
             }
@@ -45,6 +46,10 @@ query{
       }
       excerpt
       html
+      
+      fields {
+        slug
+      }
     }
   }
 }
