@@ -15,6 +15,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
                              siteUrl,
                              defaultImage,
                              twitterUsername,
+                             kw
                          },
                      },
                  }) => {
@@ -23,6 +24,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
                 description: description || defaultDescription,
                 image: `${siteUrl}${image || defaultImage}`,
                 url: `${siteUrl}${pathname || "/"}`,
+                kw:kw
             }
 
             return (
@@ -48,6 +50,7 @@ const SEO = ({ title, description, image, pathname, article }) => (
                             <meta name="twitter:description" content={seo.description} />
                         )}
                         {seo.image && <meta name="twitter:image" content={seo.image} />}
+                        {seo.kw && <meta name="keywords" content={seo.kw} />}
                     </Helmet>
                 </>
             )
@@ -63,6 +66,7 @@ SEO.propTypes = {
     image: PropTypes.string,
     pathname: PropTypes.string,
     article: PropTypes.bool,
+    kw: PropTypes.string
 }
 
 SEO.defaultProps = {
@@ -71,6 +75,7 @@ SEO.defaultProps = {
     image: null,
     pathname: null,
     article: false,
+    kw: false
 }
 
 const query = graphql`
@@ -83,6 +88,7 @@ const query = graphql`
         siteUrl: url
         defaultImage: image
         twitterUsername
+        kw
       }
     }
   }
