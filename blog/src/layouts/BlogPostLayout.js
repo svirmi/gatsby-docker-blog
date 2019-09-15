@@ -11,6 +11,7 @@ const BlogPostLayout = ({data}) => {
                 <SEO
                     title={post.frontmatter.title}
                     kw={post.frontmatter.keywords}
+                    description={post.excerpt}
                 />
                 <Header />
                 <div className="container">
@@ -31,6 +32,7 @@ export const query = graphql `
     query($slug: String!) {
         markdownRemark(fields: {slug: {eq: $slug}}){
             html
+            excerpt
             frontmatter {
                 title
                 image
