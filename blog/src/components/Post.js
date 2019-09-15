@@ -5,7 +5,7 @@ const Post = (props) => (
 
     <div className='p-3'>
         <Card style={{}}>
-            <Card.Img variant="top" src={props.image} />
+            <Card.Img variant="top" src={props.image} alt={props.alt || "gatsby blog image"} />
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text>{props.excerpt}</Card.Text>
