@@ -2,17 +2,13 @@ import React from "react";
 import {Link, graphql} from "gatsby";
 import PrimaryLayout from "../layouts/PrimaryLayout";
 import Post from "../components/Post";
-import {Helmet} from "react-helmet/es/Helmet";
+import SEO from "../components/SEO";
 
 export default ({data}) => {
     return (
         <PrimaryLayout column="col-md-12">
 
-            <Helmet>
-                <title>Page title</title>
-                <meta name="description" content="page description content" />
-                <meta name="keywords" content="" />
-            </Helmet>
+            <SEO />
 
             <h1>My Gatsby project</h1>
 

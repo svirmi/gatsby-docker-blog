@@ -7,7 +7,14 @@
 module.exports = {
   /* Your site config here */
     siteMetadata: {
-        title: "Gatsby-Bootstrap"
+        title: "Gatsby-Bootstrap",
+        kw: "kw0, kw1, kw2",
+        titleTemplate: "%s · The Real Hero",
+        description:
+            "Hogwarts Potions master, Head of Slytherin house and former Death Eater.",
+        url: "https://www.doe.com", // No trailing slash allowed!
+        image: "/images/snape.jpg", // Path to your image you placed in the 'static' folder
+        twitterUsername: "@occlumency",
     },
     plugins: [
         // You can have multiple instances of this plugin
