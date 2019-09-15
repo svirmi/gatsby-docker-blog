@@ -2,11 +2,16 @@ import React from "react";
 import { graphql } from "gatsby";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import SEO from "../components/SEO";
 
 const BlogPostLayout = ({data}) => {
     const post = data.markdownRemark;
     return (
             <div>
+                <SEO
+                    title={post.frontmatter.title}
+                    kw={post.frontmatter.keywords}
+                />
                 <Header />
                 <div className="container">
                     <div className="row justify-content-md-center">
@@ -29,6 +34,7 @@ export const query = graphql `
             frontmatter {
                 title
                 image
+                keywords
             }
         }
     }

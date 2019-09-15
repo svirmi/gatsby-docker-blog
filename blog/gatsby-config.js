@@ -9,7 +9,7 @@ module.exports = {
     siteMetadata: {
         title: "Gatsby-Bootstrap",
         kw: "kw0, kw1, kw2",
-        titleTemplate: "%s · The Real Hero",
+        titleTemplate: "%s · Gtasby Blog",
         description:
             "Hogwarts Potions master, Head of Slytherin house and former Death Eater.",
         url: "https://www.doe.com", // No trailing slash allowed!

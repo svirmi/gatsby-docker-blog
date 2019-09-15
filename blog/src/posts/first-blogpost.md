@@ -1,7 +1,7 @@
 ---
 title: "My first MD Blog Post"
 date: "2019-09-13"
-keywords: "kw-1, kw-2, kw-3"
+keywords: "p1-kw-1, p1-kw-2, p1-kw-3"
 image: "http://lorempixel.com/800/600/abstract/Dummy-Text"
 ---
 
